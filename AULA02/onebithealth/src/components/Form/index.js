@@ -1,5 +1,5 @@
 import React from "react"
-import {TextInput, View} from "react-native"
+import {View, Text, TextInput, Button} from "react-native"
 
 
 
@@ -14,10 +14,13 @@ export default function Form() {
                 ></TextInput>
                 <Text>Peso</Text>
                 <TextInput
-                placeholder="EX: 75.3"
+                placeholder="EX: 75.365"
                 keyboardType="numeric"
                 ></TextInput>
+                <Button title="Calcular IMC"/>
             </View>
+            <ResultImc messageResultImc={messageImc} resultImc={imc}/>
+
         </View>
     );
 }

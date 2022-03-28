@@ -13,7 +13,7 @@ export default function ResultImc(props) {
     }
 
     return(
-        <View style={styles.resultImc}>
+        <View style={styles.contextImc}>
             <View style={styles.boxShareButton}>
                 {props.resultImc != null ?
                 <TouchableOpacity 
